@@ -26,7 +26,7 @@ const CLIENTLIB_DIR = path.join(
   'content',
   'jcr_root',
   'apps',
-  'bringyourowngit',
+  'wknd',
   'clientlibs'
 );
 
@@ -44,28 +44,9 @@ module.exports = {
   libs: [
     {
       ...libsBaseConfig,
-      name: 'clientlib-dependencies',
-      categories: ['bringyourowngit.dependencies'],
-      assets: {
-        // Copy entrypoint scripts and stylesheets into the respective ClientLib
-        // directories
-        js: {
-          cwd: 'clientlib-dependencies',
-          files: ['**/*.js'],
-          flatten: false
-        },
-        css: {
-          cwd: 'clientlib-dependencies',
-          files: ['**/*.css'],
-          flatten: false
-        }
-      }
-    },
-    {
-      ...libsBaseConfig,
       name: 'clientlib-site',
-      categories: ['bringyourowngit.site'],
-      dependencies: ['bringyourowngit.dependencies'],
+      categories: ['wknd.site'],
+      dependencies: ['wknd.dependencies'],
       assets: {
         // Copy entrypoint scripts and stylesheets into the respective ClientLib
         // directories

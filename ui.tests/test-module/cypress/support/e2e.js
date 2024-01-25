@@ -14,11 +14,12 @@
  *  limitations under the License.
  */
 
-import './commands'
+import './aem' // contains AEM specific actions
+import './wknd' // contains wknd specific actions
 require('cypress-terminal-report/src/installLogsCollector')({
-    xhr: {
-        printHeaderData: false,
-        printRequestData: false,
-    },
-    debug: true
-});
+  xhr: {
+    printHeaderData: false,
+    printRequestData: false
+  },
+  debug: true
+})

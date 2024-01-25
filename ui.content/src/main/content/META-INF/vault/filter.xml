@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workspaceFilter version="1.0">
-    <filter root="/conf/bringyourowngit" mode="merge"/>
-    <filter root="/content/bringyourowngit" mode="merge"/>
-    <filter root="/content/dam/bringyourowngit" mode="merge">
-        <exclude pattern="/content/dam/bringyourowngit(/.*)?"/>
-        <include pattern="/content/dam/bringyourowngit/jcr:content(/.*)?"/>
-    </filter>
-    <filter root="/content/dam/bringyourowngit/asset.jpg" mode="merge"/>
-    <filter root="/content/experience-fragments/bringyourowngit" mode="merge"/>
+    <filter root="/conf/wknd" mode="merge"/>
+    <filter root="/content/wknd" mode="merge"/>
+    <filter root="/content/dam/wknd" mode="merge"/>
+    <filter root="/content/experience-fragments/wknd" mode="merge"/>
 </workspaceFilter>

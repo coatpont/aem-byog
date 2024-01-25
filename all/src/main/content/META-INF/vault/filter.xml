@@ -15,6 +15,6 @@
   ~ limitations under the License.
   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <workspaceFilter version="1.0">
-    <filter root="/apps/bringyourowngit-packages"/>
-    <filter root="/apps/bringyourowngit-vendor-packages"/>
+    <filter root="/apps/wknd-packages"/>
+    <filter root="/apps/wknd-vendor-packages"/>
 </workspaceFilter>

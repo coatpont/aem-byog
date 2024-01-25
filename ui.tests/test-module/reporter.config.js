@@ -20,5 +20,5 @@ module.exports = {
   reporterEnabled: 'spec, mocha-junit-reporter',
   mochaJunitReporterReporterOptions: {
     mochaFile: `${reportsPath}/output.[hash].xml`
-  },
+  }
 }

@@ -14,7 +14,7 @@
  *  limitations under the License.
  */
 
-const { defineConfig } = require("cypress");
+const { defineConfig } = require('cypress')
 const reportsPath = process.env.REPORTS_PATH || 'cypress/results'
 const authorURL = process.env.AEM_AUTHOR_URL || 'http://localhost:4502'
 const authorName = process.env.AEM_AUTHOR_USERNAME || 'admin'
@@ -23,7 +23,7 @@ const publishURL = process.env.AEM_PUBLISH_URL || 'http://localhost:4503'
 const publishName = process.env.AEM_PUBLISH_USERNAME || 'admin'
 const publishPass = process.env.AEM_PUBLISH_PASSWORD || 'admin'
 
-let config = {
+const config = {
   env: {
     AEM_AUTHOR_URL: authorURL,
     AEM_AUTHOR_USERNAME: authorName,
@@ -31,22 +31,26 @@ let config = {
     AEM_PUBLISH_URL: publishURL,
     AEM_PUBLISH_USERNAME: publishName,
     AEM_PUBLISH_PASSWORD: publishPass,
-    REPORTS_PATH: reportsPath,
+    REPORTS_PATH: reportsPath
   },
   e2e: {
-    setupNodeEvents(on, config) {
+    setupNodeEvents (on) {
       require('cypress-terminal-report/src/installLogsPrinter')(on, {
-        printLogsToConsole: "always",
-      });
+        printLogsToConsole: 'always'
+      })
     },
     baseUrl: authorURL,
+    defaultCommandTimeout: 10000,
     reporter: 'cypress-multi-reporters',
     reporterOptions: {
-      configFile: 'reporter.config.js',
-    },
+      configFile: 'reporter.config.js'
+    }
   },
-  videosFolder: reportsPath + "/videos",
-  screenshotsFolder: reportsPath + "/screenshots",
+  videosFolder: reportsPath + '/videos',
+  screenshotsFolder: reportsPath + '/screenshots'
 }
 
-module.exports = defineConfig(config);
+module.exports = {
+  ...defineConfig(config)
+
+}
