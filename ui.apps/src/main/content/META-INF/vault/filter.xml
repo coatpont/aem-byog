@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/apps/bringyourowngit/clientlibs"/>
+    <filter root="/apps/bringyourowngit/components"/>
+    <filter root="/apps/bringyourowngit/i18n"/>
+</workspaceFilter>
