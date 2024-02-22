@@ -8,7 +8,7 @@ import com.adobe.cq.wcm.core.components.models.datalayer.ComponentData;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 /**
- * Represents the WKND Image List Component
+ * Represents the WKND Image List Component (dummy change)
  */
 public interface ImageList {
 
