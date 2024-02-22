@@ -68,7 +68,7 @@ import java.util.stream.Collectors;
         resourceType = {ImageListImpl.RESOURCE_TYPE},
         defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL
 )
-public class ImageListImpl implements ImageList {
+public class ImageListImpl implements ImageList2 {
     private static final Logger log = LoggerFactory.getLogger(ImageListImpl.class);
 
     protected static final String RESOURCE_TYPE = "wknd/components/image-list";
