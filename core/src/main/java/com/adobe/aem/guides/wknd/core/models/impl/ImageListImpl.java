@@ -176,7 +176,7 @@ public class ImageListImpl implements ImageList {
 
         @Override
         public String getDescription() {
-            return this.page.getProperties().get("shortDescription", this.page.getDescription());
+            return "description" + this.page.getProperties().get("shortDescription", this.page.getDescription());
         }
 
         @Override
